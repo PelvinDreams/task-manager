@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: opacity 0.5s ease;
+  }
+
+  
+li.dragging {
+    opacity: 0.5;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+  }
+
+ 
+  
+  button {
+    margin: 0 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .countdown {
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  .countdown.overdue {
+    color: red;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+  }
+  
+  #themeToggle {
+    background: none;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  #searchFilter {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  
+
+  #searchBar, #priorityFilter {
+    padding: 5px;
+    flex: 1;
+  }
+  
+  /* Dark Mode Styles */
+  body.dark {
+    background-color: #121212;
+    color: #f0f0f0;
+  }
+  
+  body.dark header {
+    background-color: #333;
+  }
+  
+  body.dark button {
+    color: #f0f0f0;
+  }
+  
+  body.dark li {
+    background-color: #1e1e1e;
+    border-color: #555;
+  }
+  
+  .countdown {
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  .countdown.overdue {
+    color: red;
+  }
+  
